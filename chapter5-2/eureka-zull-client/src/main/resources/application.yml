@@ -1,0 +1,20 @@
+server:
+  port: 9050
+spring:
+  application:
+    name: eureka-zull-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10301/eureka/
+zuul:
+  routes:
+    eurekaapi:
+     path: /eurekaapi/**
+     serviceId: eureka-client
+    ribbonapi:
+     path: /ribbonapi/**
+     serviceId: eureka-ribbon-client
+    feignapi:
+     path: /feignapi/**
+     serviceId: eureka-feign-client

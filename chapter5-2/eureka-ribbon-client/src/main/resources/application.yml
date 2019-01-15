@@ -1,0 +1,9 @@
+server:
+  port: 9052
+spring:
+  application:
+    name: eureka-ribbon-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10301/eureka/
