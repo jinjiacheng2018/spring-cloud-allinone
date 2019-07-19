@@ -15,5 +15,11 @@ public class EurekaServerApplicationTests
     {
         System.out.println("develop分支添加新的内容");
     }
+
+    @Test
+    public void test1()
+    {
+        System.out.println("测试分支的合并操作！");
+    }
     
 }
