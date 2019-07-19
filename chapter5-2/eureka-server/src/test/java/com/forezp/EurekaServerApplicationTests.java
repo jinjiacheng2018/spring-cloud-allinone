@@ -13,6 +13,7 @@ public class EurekaServerApplicationTests
     @Test
     public void contextLoads()
     {
+        System.out.println("develop分支添加新的内容");
     }
     
 }
