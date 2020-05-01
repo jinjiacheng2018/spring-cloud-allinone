@@ -1,6 +1,8 @@
 package com.forezp.feign;
 
+import com.forezp.bean.User;
 import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -26,4 +28,7 @@ public interface EurekaClientFeign {
      */
     @RequestMapping(value = "/hi")
     String hello(@RequestParam(name = "name") String name);
+
+    @RequestMapping(value = "/userDetail")
+    String userDetail(@RequestBody User user);
 }
